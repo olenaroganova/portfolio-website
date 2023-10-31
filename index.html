@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a class="navigation-link" href="#about_me">About me</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#about_game">About game</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about_me">
+            <h1>Roganova Olena</h1>
+            <p>Frontend developer</p>
+            <p>I'm a student of Prometheus, Goit. Looking for interesting work.</p>
+        </section>
+        <section id="about_game" class="about-game">
+            <h2>Mini-game 2048</h2>
+            <p>Game for the brain, launch, calm evenings and long traveling. You can play it wherever. You can play alone or with friends.  </p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="img">
+                <div class="first">
+                    <div class="first_up">2048</div>
+                    <div class="first_down">Score: 0</div>
+                </div>
+
+                <div class="second">
+                    <div class="second_up">
+                        <div class="number2">2</div>
+                        <div class="number4">4</div>
+                    </div>
+                    <div class="second_down">Score: 0</div>
+                </div>
+                <div class="third"><img src="./2048.jpg" alt="game 2048" width="200" height="200"></div>
+                
+            </div>
+            <form name="user_form" action="/" method="post" class="form">
+                <fieldset>
+                    <legend>Form of return connect</legend>
+                    <label for="user_name">Name:</label>
+                    <input type="text" id="user_name" placeholder="Name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="25" rows="5"></textarea>
+                    <br>
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+            
+        </section>
+    </main>
+    
+    
+</body>
+</html>
